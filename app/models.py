@@ -32,7 +32,7 @@ class Disciplina(models.Model):
     def __str__(self):
         return self.nome
     
-class reservaAmbiente(models.Model):
+class ReservaAmbiente(models.Model):
     dt_inicio = models.DateTimeField()
     dt_termino = models.DateTimeField()
     periodo = models.CharField(max_length=50, choices=[
